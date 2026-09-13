@@ -13,10 +13,7 @@ import {
   X,
   ChevronDown,
   ChevronUp,
-  Maximize2,
-  Minimize2,
-  Gauge,
-  CheckCircle2,
+  GripHorizontal,
 } from "lucide-react";
 import { useAudioReader } from "@/context/AudioReaderContext";
 import { useLanguage } from "@/context/LanguageContext";
@@ -75,29 +72,35 @@ export default function ResumeAudioNarrator() {
   return (
     <AnimatePresence>
       <motion.aside
+        drag
+        dragMomentum={false}
+        dragElastic={0.12}
+        whileDrag={{ scale: 1.02, cursor: "grabbing" }}
         initial={{ y: 80, opacity: 0, scale: 0.95 }}
         animate={{ y: 0, opacity: 1, scale: 1 }}
         exit={{ y: 80, opacity: 0, scale: 0.95 }}
         transition={{ duration: 0.25, ease: "easeOut" }}
-        className={`fixed left-1/2 -translate-x-1/2 z-[90] transition-all duration-300 ${
+        className={`fixed left-1/2 -translate-x-1/2 z-[90] cursor-grab active:cursor-grabbing select-none ${
           isMinimized
-            ? "bottom-4 w-[92%] sm:w-auto min-w-[300px] max-w-md"
+            ? "bottom-4 w-[92%] sm:w-auto min-w-[310px] max-w-md"
             : "bottom-3 sm:bottom-5 w-[96%] max-w-xl"
         }`}
         style={{ paddingBottom: "max(env(safe-area-inset-bottom, 0px), 8px)" }}
         role="region"
-        aria-label="AI Audio Resume Player"
+        aria-label="AI Audio Resume Player (Draggable)"
         aria-live="polite"
       >
         {isMinimized ? (
           /* ================= MINIMAL DYNAMIC CAPSULE (MOBILE ISLAND) ================= */
-          <div className="relative rounded-full bg-[#0b0e14]/95 border border-[#d4ff00]/50 backdrop-blur-2xl px-3 py-2 shadow-[0_10px_35px_rgba(0,0,0,0.85),0_0_20px_rgba(212,255,0,0.25)] flex items-center justify-between gap-2.5">
-            {/* Left: Animated Sound Icon & Title */}
+          <div className="relative rounded-full bg-[#0b0e14]/95 border border-[#d4ff00]/50 backdrop-blur-2xl px-3 py-2 shadow-[0_12px_40px_rgba(0,0,0,0.85),0_0_25px_rgba(212,255,0,0.25)] flex items-center justify-between gap-2.5">
+            {/* Left: Drag Grip & Sound Icon & Title */}
             <button
               type="button"
+              onPointerDownCapture={(e) => e.stopPropagation()}
               onClick={() => setIsMinimized(false)}
               className="flex items-center gap-2 text-left shrink truncate cursor-pointer group"
             >
+              <GripHorizontal className="w-3.5 h-3.5 text-[#8e94a0] group-hover:text-[#d4ff00] shrink-0" />
               <div className="w-7 h-7 rounded-full bg-[#d4ff00]/15 text-[#d4ff00] border border-[#d4ff00]/40 flex items-center justify-center shrink-0">
                 <Volume2 className="w-3.5 h-3.5 animate-pulse" />
               </div>
@@ -106,7 +109,7 @@ export default function ResumeAudioNarrator() {
                   <span className="text-[10px] font-mono font-bold text-[#d4ff00]">
                     [{currentSectionIndex + 1}/{totalSections}]
                   </span>
-                  <span className="text-xs font-semibold text-white truncate max-w-[140px] sm:max-w-[180px]">
+                  <span className="text-xs font-semibold text-white truncate max-w-[130px] sm:max-w-[170px]">
                     {currentSection?.title}
                   </span>
                 </div>
@@ -114,7 +117,7 @@ export default function ResumeAudioNarrator() {
             </button>
 
             {/* Right: Mini Controls */}
-            <div className="flex items-center gap-1 shrink-0">
+            <div className="flex items-center gap-1 shrink-0" onPointerDownCapture={(e) => e.stopPropagation()}>
               <button
                 type="button"
                 onClick={isPaused ? resumeReading : pauseReading}
@@ -151,7 +154,12 @@ export default function ResumeAudioNarrator() {
           </div>
         ) : (
           /* ================= EXPANDED FULL FEATURE MOBILE HUD ================= */
-          <div className="relative rounded-2xl bg-[#0b0e14]/98 border border-[#d4ff00]/40 backdrop-blur-2xl shadow-[0_12px_45px_rgba(0,0,0,0.9),0_0_30px_rgba(212,255,0,0.2)] overflow-hidden">
+          <div className="relative rounded-2xl bg-[#0b0e14]/98 border border-[#d4ff00]/40 backdrop-blur-2xl shadow-[0_16px_50px_rgba(0,0,0,0.9),0_0_30px_rgba(212,255,0,0.2)] overflow-hidden">
+            {/* Top Tactile Drag Grip Pill */}
+            <div className="pt-2 pb-1 flex items-center justify-center cursor-grab active:cursor-grabbing">
+              <div className="w-10 h-1 rounded-full bg-white/25 hover:bg-[#d4ff00]/60 transition-colors" />
+            </div>
+
             {/* Neon Top Progress Bar */}
             <div className="h-1.5 w-full bg-black/60 relative">
               <motion.div
@@ -184,7 +192,7 @@ export default function ResumeAudioNarrator() {
                 </div>
 
                 {/* Equalizer Audio Waves & Window Controls */}
-                <div className="flex items-center gap-1 sm:gap-1.5">
+                <div className="flex items-center gap-1 sm:gap-1.5" onPointerDownCapture={(e) => e.stopPropagation()}>
                   <div className="flex items-end gap-0.5 h-4 sm:h-5 px-2 py-0.5 rounded bg-black/50 border border-white/10">
                     {[40, 90, 60, 100, 75, 45, 80].map((height, i) => (
                       <motion.div
@@ -242,7 +250,7 @@ export default function ResumeAudioNarrator() {
               </div>
 
               {/* Controls Bar */}
-              <div className="flex items-center justify-between gap-2">
+              <div className="flex items-center justify-between gap-2" onPointerDownCapture={(e) => e.stopPropagation()}>
                 {/* Prev / Play-Pause / Next */}
                 <div className="flex items-center gap-1.5 sm:gap-2">
                   <button
@@ -326,5 +334,6 @@ export default function ResumeAudioNarrator() {
     </AnimatePresence>
   );
 }
+
 
 

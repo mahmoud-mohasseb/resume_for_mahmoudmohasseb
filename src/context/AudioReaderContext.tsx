@@ -435,7 +435,8 @@ export function AudioReaderProvider({
   const pauseReading = useCallback(() => {
     if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
     if (isReading && !isPaused) {
-      window.speechSynthesis.pause();
+      // Cleanly cancel active utterance so browser audio engine never locks up
+      window.speechSynthesis.cancel();
       setIsPaused(true);
     }
   }, [isReading, isPaused]);
@@ -443,12 +444,12 @@ export function AudioReaderProvider({
   const resumeReading = useCallback(() => {
     if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
     if (isReading && isPaused) {
-      window.speechSynthesis.resume();
       setIsPaused(false);
+      speakSection(currentIndexRef.current);
     } else if (!isReading) {
       startReading(currentSectionIndex);
     }
-  }, [isReading, isPaused, currentSectionIndex, startReading]);
+  }, [isReading, isPaused, currentSectionIndex, startReading, speakSection]);
 
   const stopReading = useCallback(() => {
     if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
