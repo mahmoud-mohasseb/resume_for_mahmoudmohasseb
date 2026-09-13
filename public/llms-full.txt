@@ -1,0 +1,94 @@
+# Mahmoud Mohasseb — Full Technical Profile & Verified Career History
+
+## Personal & Contact Information
+- Full Name: Mahmoud Mohasseb
+- Professional Title: Technical Support Specialist & AI Vibe Coding Pioneer
+- Location: Bucharest, Romania
+- Phone / WhatsApp: +40 752 331 545
+- WhatsApp Link: https://wa.me/40752331545
+- Email: Ghareb4@gmail.com
+- LinkedIn: https://linkedin.com/in/mahmoud-m-5b6824b6
+- GitHub: https://github.com/mahmoud-mohasseb
+- Live Portfolio: https://mahmoud-ahmed.netlify.app
+- PDF Resume Download: https://mahmoud-ahmed.netlify.app/Mahmoud_Mohasseb_Resume.pdf
+
+## Executive Summary
+Analytical, Lean-certified Technical Support & Web Systems Specialist with hands-on enterprise experience supporting Microsoft EMEA service engagements, high-volume application ecosystems (Bolt / Arvato), and full-stack software debugging. Combines 5+ years of modern web application development (JavaScript, TypeScript, React.js, Next.js, Node.js, REST/GraphQL APIs) with structured IT support operations, ticketing triage, and autonomous AI-assisted 'Vibe Coding' workflows (Claude 3.7 Sonnet, Cursor AI Composer, Google Antigravity). Proven record in managing end-to-end incident lifecycles, executing systematic Root Cause Analysis (RCA), and delivering rapid resolution under strict SLA benchmarks.
+
+## Verified Key Performance Metrics
+1. 99.4% SLA & KPI Adherence across enterprise service engagements.
+2. 75% Reporting Cycle Time Saved by engineering automated Google Apps Script dashboard engines.
+3. 40% Incident Ticket Reduction through deep API debugging, error interceptors, and client-side caching.
+4. 10x Development Velocity achieved through Claude 3.7 Sonnet Extended Thinking, Cursor Composer, and Google Antigravity agentic workflows.
+5. 5+ Years of combined Enterprise Support & Full-Stack Web Development.
+
+## Enterprise Experience
+
+### 1. Genpact — Content Operations Specialist & Lean Innovator
+- Period: Feb 2024 – Present
+- Location: Bucharest, Romania
+- Key Responsibilities & Achievements:
+  - Enforce client-specific technical guidelines and policy compliance across digital video platforms, evaluating complex edge cases and resolving high-severity compliance incidents under strict turnaround SLAs.
+  - Isolate systemic workflow breakdowns and platform anomalies, documenting reproduction steps and liaising directly with tier-level engineering groups for swift bug remediation.
+  - Automated Weekly Business Review (WBR) reporting by developing a custom data visualization engine via Google Apps Script, eliminating manual data handling and reducing reporting cycle time by several hours weekly.
+  - Integrated Google Forms into Google Sites operational hubs, standardizing intake workflows and eliminating multi-platform navigation friction.
+  - Leveraged Lean Digital Transformation principles, applying Value Stream Mapping (VSM) and 5-Why RCA to identify operational bottlenecks and enhance team workflow throughput.
+
+### 2. Majorel — Resource Coordinator (Microsoft EMEA Operations)
+- Period: Feb 2018 – Dec 2021
+- Location: Brașov, Romania
+- Key Responsibilities & Achievements:
+  - Governed the end-to-end service engagement lifecycle for enterprise resource requests across Microsoft EMEA service portfolios, reviewing, validating, and approving technical allocations against project criteria.
+  - Administered dedicated Microsoft Dashboard applications to monitor real-time queue capacity, balance workload distribution, and track engineer availability across diverse service disciplines.
+  - Analyzed technical competency matrices to match specialized engineering talent with high-impact customer escalations, ensuring rapid deployment and contract SLA compliance.
+  - Served as a senior operational point of contact for staffing and assignment escalations, collaborating cross-regionally with Microsoft project leads across the EMEA theatre.
+
+### 3. Arvato Bertelsmann — Technical Support Specialist (Bolt Platform)
+- Period: Feb 2019 – Feb 2020
+- Location: Brașov, Romania
+- Key Responsibilities & Achievements:
+  - Provided end-to-end technical and customer support for the Bolt mobile and web platform, investigating and resolving application glitches, route-tracking anomalies, and billing/ticket discrepancies.
+  - Troubleshot user account, onboarding, and registration issues, guiding drivers and riders through app configuration, permissions, and network-related connectivity troubleshooting.
+  - Managed multi-channel ticket queues in a fast-paced environment, meeting stringent first-contact resolution (FCR) and response time SLAs while maintaining superior CSAT scores.
+  - Documented reproducible software bugs and escalated edge cases to second-tier technical support and operations engineering adhering to standardized support runbooks.
+
+### 4. Freelance — Full-Stack & React Technical Support Specialist
+- Period: Feb 2019 – Dec 2024
+- Location: Remote (Upwork / Fiverr)
+- Key Responsibilities & Achievements:
+  - Diagnosed, debugged, and resolved critical defects in complex JavaScript, TypeScript, React.js, and Node.js applications for international business clients.
+  - Conducted deep diagnostics using Chrome DevTools, network logs, and Postman to pinpoint and resolve API failures, CORS misconfigurations, JSON parsing defects, and state errors.
+  - Integrated RESTful web services and GraphQL endpoints with NoSQL/SQL databases (MongoDB, MySQL), ensuring robust error handling, validation, and data consistency.
+  - Provided responsive post-deployment technical support, writing clear setup guides and troubleshooting manuals to assist non-technical users and IT teams.
+
+### 5. Hawa Ltd (ONtv Network) — Production Accountant / Operations Analyst
+- Period: Aug 2008 – Feb 2017
+- Location: Cairo, Egypt
+- Key Responsibilities & Achievements:
+  - Maintained precise operational expenditure records, executing monthly ledger reconciliations, balance sheet audits, and journal entries with zero discrepancy tolerances.
+  - Engineered advanced Microsoft Excel automation models leveraging Power Query, XLOOKUP, and dynamic Pivot Tables, accelerating monthly financial and operational close routines.
+
+## Technical Skills Matrix
+- **Vibe Coding & AI Tools:** Claude 3.7 Sonnet (Extended Thinking), Cursor AI Composer, Google Antigravity, GitHub Copilot, Prompt Engineering, Agentic Tooling, LLM Structured Output Synthesis.
+- **Enterprise Support & Incident Lifecycle:** Tier 1/2/3 Support, 5-Why Root Cause Analysis (RCA), Incident & Problem Management, SLA & KPI Governance, Ticket Triage, Queue Dispatching, Escalation Management, Microsoft Resource Tools.
+- **Frontend & Web Development:** Next.js 15, React.js, TypeScript, JavaScript (ES6+), Tailwind CSS, Framer Motion, Responsive Web Design, WebGL / Canvas.
+- **Backend & Scripting:** Node.js, Express.js, RESTful APIs, GraphQL, Google Apps Script, JSON Parsing, Webhooks, Google Sheets API.
+- **Diagnostics, Tooling & Databases:** Chrome DevTools, Postman, Git / GitHub, MySQL, MongoDB, Advanced Excel (Power Query, XLOOKUP), Microsoft 365.
+- **Continuous Improvement & Lean:** Lean Digital Transformation, Value Stream Mapping (VSM), Waste Elimination, Standard Operating Procedures (SOPs), Kaizen.
+
+## Verified Certifications
+1. **Lean Certification (Digital Transformation)** — Genpact (Credential ID: 2623686, 2026)
+2. **AI Fluency: Framework & Foundations** — Anthropic (2026)
+3. **Modern Web Development Bootcamp (Full-Stack)** — Udemy
+4. **JavaScript Algorithms and Data Structures** — freeCodeCamp (Dec 2021)
+5. **ReactJS, Redux & React Router Architecture** — Udemy (2021)
+6. **JavaScript: Understanding the Weird Parts** — Udemy
+
+## Formal Education
+- **Bachelor's Degree in Commerce** — Ain Shams University, Cairo (2006 – 2010)
+- **Diploma in Information Technology** — Advanced Technical School for IT, Cairo (2000 – 2005)
+
+## Spoken & Written Languages
+- **Arabic:** Native / Bilingual (100%)
+- **English:** Full Professional Working Proficiency (95%)
+- **German:** Elementary Proficiency (A1/A2, 40%)

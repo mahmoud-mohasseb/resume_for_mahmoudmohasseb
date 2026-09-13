@@ -52,6 +52,9 @@ async function runTestSuite() {
     { path: "/apple-icon", expectedStatus: 200, type: "Apple Icon" },
     { path: "/Mahmoud_Mohasseb_Resume.pdf", expectedStatus: 200, type: "PDF Resume" },
     { path: "/mahmoud-profile.png", expectedStatus: 200, type: "Portrait Photo" },
+    { path: "/robots.txt", expectedStatus: 200, type: "Robots AI Discovery" },
+    { path: "/llms.txt", expectedStatus: 200, type: "LLMs Context File" },
+    { path: "/llms-full.txt", expectedStatus: 200, type: "Full LLM Resume" },
   ];
 
   for (const ep of endpoints) {
@@ -111,6 +114,12 @@ async function runTestSuite() {
     assert(
       html.includes("Audio") || html.includes("audio") || html.includes("Volume"),
       "AI Audio Resume Reader system is present in DOM"
+    );
+
+    // Check JSON-LD Schema for AI Crawlers
+    assert(
+      html.includes('application/ld+json') && html.includes('"@type":"Person"'),
+      "JSON-LD Schema.org Structured Data for AI search engines is present in HTML"
     );
   } catch (err) {
     assert(false, `Failed HTML structure evaluation: ${err.message}`);

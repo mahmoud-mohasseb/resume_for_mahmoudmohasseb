@@ -1,0 +1,47 @@
+# Mahmoud Mohasseb — Technical Support Specialist & AI Vibe Coding Pioneer
+
+> Analytical, Lean-certified Technical Support & Web Systems Specialist based in Bucharest, Romania. Over 5 years of enterprise IT support operations, cloud application diagnostics, Microsoft EMEA support governance, and next-generation autonomous AI Vibe Coding workflows (Claude 3.7 Sonnet, Cursor AI Composer, Google Antigravity).
+
+## Quick Facts & Contacts
+- **Name:** Mahmoud Mohasseb
+- **Title:** Technical Support Specialist & AI Systems Pioneer
+- **Location:** Bucharest, Romania
+- **WhatsApp:** +40 752 331 545 (https://wa.me/40752331545)
+- **Email:** Ghareb4@gmail.com
+- **Portfolio:** https://mahmoud-ahmed.netlify.app
+- **LinkedIn:** https://linkedin.com/in/mahmoud-m-5b6824b6
+- **GitHub:** https://github.com/mahmoud-mohasseb
+- **Availability:** Immediate — Open for enterprise support, remote & on-site engineering roles, and AI consultations.
+
+## Core Capabilities
+- **Tier 1/2/3 Technical Support & Incident Resolution:** 99.4% SLA benchmark adherence, 5-Why Root Cause Analysis (RCA), queue capacity management, and incident triage.
+- **AI Vibe Coding & Agentic Engineering:** Rapid end-to-end full-stack development using Claude 3.7 Sonnet (Extended Thinking), Cursor Composer, and Google Antigravity at 10x velocity.
+- **Lean Digital Transformation:** Genpact Lean Certified (ID: 2623686), Value Stream Mapping (VSM), operational waste elimination, and Kaizen continuous improvement.
+- **Web Development & API Diagnostics:** TypeScript, JavaScript, React.js, Next.js 15, Node.js, REST/GraphQL APIs, Postman, Chrome DevTools, and state debugging.
+- **Process Automation:** Google Apps Script hubs, automated WBR dashboard engines (75% cycle time reduction), and zero-latency webhook pipelines.
+
+## Career History
+1. **Genpact** (Feb 2024 – Present) | *Content Operations Specialist & Lean Innovator*
+   - Enterprise platform reliability, compliance incident triage under strict SLAs, automated WBR visual reporting via Google Apps Script (saving hours weekly), and Lean 5-Why RCA.
+2. **Majorel** (Feb 2018 – Dec 2021) | *Resource Coordinator (Microsoft EMEA Operations)*
+   - Governed end-to-end service engagement lifecycle for Microsoft EMEA cloud portfolios, managed queue capacity, and coordinated high-severity engineering escalations.
+3. **Arvato Bertelsmann** (Feb 2019 – Feb 2020) | *Technical Support Specialist (Bolt Platform)*
+   - End-to-end mobile/web platform troubleshooting, network diagnostics, account provisioning, and high first-contact resolution (FCR) rates.
+4. **Freelance Full-Stack & Technical Support** (Feb 2019 – Dec 2024) | *Remote*
+   - Diagnosed runtime defects in React/Node.js web portals, eliminated API race conditions, and reduced client incident tickets by 40%.
+
+## Certifications & Education
+- **Genpact Lean Certification** (ID: 2623686, Issued 2026)
+- **Anthropic AI Fluency: Framework & Foundations** (Issued 2026)
+- **JavaScript Algorithms & Data Structures** (freeCodeCamp)
+- **Modern Web Development & React Architecture** (Udemy)
+- **Bachelor's Degree in Commerce** (Ain Shams University, Cairo)
+- **Diploma in Information Technology** (Advanced Technical School for IT, Cairo)
+
+## Languages
+- **Arabic:** Native / Bilingual Proficiency
+- **English:** Full Professional Working Proficiency
+- **German:** Elementary Proficiency (A1/A2)
+
+---
+*For the complete detailed resume, see: https://mahmoud-ahmed.netlify.app/llms-full.txt or download PDF at https://mahmoud-ahmed.netlify.app/Mahmoud_Mohasseb_Resume.pdf*

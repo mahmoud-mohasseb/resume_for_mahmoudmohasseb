@@ -18,15 +18,18 @@ export default function LiveMetricsGrid() {
   const icons = [Award, Clock, ShieldCheck, Zap, TrendingUp];
 
   return (
-    <section className="relative py-12 bg-[#0b0d10] border-y border-white/10 overflow-hidden">
+    <section id="metrics-telemetry" className="relative py-10 sm:py-12 bg-[#0b0d10] border-y border-white/10 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3.5 sm:gap-4 lg:gap-6">
           {metrics.map((metric, idx) => {
             const IconComponent = icons[idx % icons.length];
+            const isLastOnMobile = idx === 4;
             return (
               <div
                 key={idx}
-                className="p-5 rounded-2xl bg-[#111317] border border-white/10 hover:border-[#d4ff00]/60 transition-all duration-300 group hover:-translate-y-1.5 shadow-lg relative overflow-hidden"
+                className={`p-4 sm:p-5 rounded-2xl bg-[#111317] border border-white/10 hover:border-[#d4ff00]/60 transition-all duration-300 group hover:-translate-y-1.5 shadow-lg relative overflow-hidden ${
+                  isLastOnMobile ? "col-span-2 sm:col-span-1 md:col-span-1" : "col-span-1"
+                }`}
               >
                 {/* Subtle top indicator */}
                 <div
@@ -34,19 +37,19 @@ export default function LiveMetricsGrid() {
                   style={{ backgroundColor: metric.color }}
                 />
 
-                <div className="flex items-center justify-between mb-3">
-                  <div className="w-8 h-8 rounded-lg bg-[#161920] border border-white/10 flex items-center justify-center text-[#d4ff00] group-hover:scale-110 group-hover:shadow-[0_0_15px_rgba(212,255,0,0.3)] transition-all">
-                    <IconComponent className="w-4 h-4" />
+                <div className="flex items-center justify-between mb-2.5 sm:mb-3">
+                  <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-[#161920] border border-white/10 flex items-center justify-center text-[#d4ff00] group-hover:scale-110 group-hover:shadow-[0_0_15px_rgba(212,255,0,0.3)] transition-all">
+                    <IconComponent className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                   </div>
                   <span className="text-[10px] font-mono text-[#8e94a0] uppercase tracking-wider">
                     [ 0{idx + 1} ]
                   </span>
                 </div>
-                <div className="text-2xl sm:text-3xl font-extrabold text-[#f4f4ee] group-hover:text-[#d4ff00] transition-colors font-mono">
+                <div className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-[#f4f4ee] group-hover:text-[#d4ff00] transition-colors font-mono">
                   {metric.value}
                 </div>
                 <p className="text-xs font-semibold text-[#f4f4ee] mt-1">{metric.label}</p>
-                <p className="text-[11px] text-[#8e94a0] mt-1 font-mono line-clamp-1">{metric.subtext}</p>
+                <p className="text-[10px] sm:text-[11px] text-[#8e94a0] mt-0.5 sm:mt-1 font-mono line-clamp-1">{metric.subtext}</p>
               </div>
             );
           })}
@@ -55,3 +58,4 @@ export default function LiveMetricsGrid() {
     </section>
   );
 }
+

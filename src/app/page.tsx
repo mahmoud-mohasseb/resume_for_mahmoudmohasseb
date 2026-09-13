@@ -12,6 +12,7 @@ import Footer from "@/components/Footer";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
 import CinematicSpotlight from "@/components/CinematicSpotlight";
 import Interactive3DBackground from "@/components/Interactive3DBackground";
+import ZeroGravityKineticDock from "@/components/ZeroGravityKineticDock";
 
 export default function Home() {
   return (
@@ -57,6 +58,10 @@ export default function Home() {
 
       {/* Floating WhatsApp Quick Action Widget */}
       <FloatingWhatsAppButton />
+
+      {/* Zero-Gravity Mobile Radial Kinetic Dock */}
+      <ZeroGravityKineticDock />
     </main>
   );
 }
+
