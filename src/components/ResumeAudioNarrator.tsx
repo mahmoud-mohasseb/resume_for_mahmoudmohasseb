@@ -100,7 +100,9 @@ export default function ResumeAudioNarrator() {
               onClick={() => setIsMinimized(false)}
               className="flex items-center gap-2 text-left shrink truncate cursor-pointer group"
             >
-              <GripHorizontal className="w-3.5 h-3.5 text-[#8e94a0] group-hover:text-[#d4ff00] shrink-0" />
+              <div className="p-1 cursor-grab active:cursor-grabbing touch-none">
+                <GripHorizontal className="w-3.5 h-3.5 text-[#8e94a0] group-hover:text-[#d4ff00] shrink-0" />
+              </div>
               <div className="w-7 h-7 rounded-full bg-[#d4ff00]/15 text-[#d4ff00] border border-[#d4ff00]/40 flex items-center justify-center shrink-0">
                 <Volume2 className="w-3.5 h-3.5 animate-pulse" />
               </div>
@@ -156,8 +158,8 @@ export default function ResumeAudioNarrator() {
           /* ================= EXPANDED FULL FEATURE MOBILE HUD ================= */
           <div className="relative rounded-2xl bg-[#0b0e14]/98 border border-[#d4ff00]/40 backdrop-blur-2xl shadow-[0_16px_50px_rgba(0,0,0,0.9),0_0_30px_rgba(212,255,0,0.2)] overflow-hidden">
             {/* Top Tactile Drag Grip Pill */}
-            <div className="pt-2 pb-1 flex items-center justify-center cursor-grab active:cursor-grabbing">
-              <div className="w-10 h-1 rounded-full bg-white/25 hover:bg-[#d4ff00]/60 transition-colors" />
+            <div className="pt-2.5 pb-1 flex items-center justify-center cursor-grab active:cursor-grabbing touch-none">
+              <div className="w-12 h-1.5 rounded-full bg-white/30 hover:bg-[#d4ff00]/80 transition-colors" />
             </div>
 
             {/* Neon Top Progress Bar */}
